@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # __author__ = 'Administrator'
+=======
+# __author__ = 'Jiaolong Yu'
+>>>>>>> 84114027e5ca7e4132dc0e5f4422a795522c264f
 import json
 # import sys
 import re
