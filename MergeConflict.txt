@@ -1,7 +1,3 @@
 Jane and Joe
 John goes to the hill
-<<<<<<< HEAD
-Red hat, Grean hat
-=======
-Blue hat, Purple hat
->>>>>>> joce
+Red hat, Green hat
