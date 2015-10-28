@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Connexus!"
+        android:gravity="center_horizontal"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_weight="1"/>
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Take a Picture"
+        android:onClick="camera"/>
+    <Button
+        android:id="@+id/usethispicture"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Use this picture" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="View All streams"
+        android:onClick="tostreams"/>
+</LinearLayout>
+

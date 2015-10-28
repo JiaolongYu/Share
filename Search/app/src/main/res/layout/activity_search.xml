@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        tools:context=".MyActivity">
+        <EditText android:id="@+id/searchname"
+            android:layout_width="500dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="Stream Name" />
+        <Button
+            android:layout_width="300dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:onClick="Searchnames"/>
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/numresult"
+                android:text="XXX RESULT FOR ..."
+                android:gravity="center_horizontal"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+            <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:columnWidth="250dp"
+                android:numColumns="4"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="More SEARCH RESULTS"
+                android:onClick="moreres"/>
+        </LinearLayout>

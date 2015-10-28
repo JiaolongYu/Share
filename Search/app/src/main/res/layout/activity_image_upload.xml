@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <TextView
+        android:text="Connexus!"
+        android:gravity="center_horizontal"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/choose_from_library"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Choose from your library" />
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Use a camera"
+        android:onClick="camerasss"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/thumbnail"
+        android:adjustViewBounds="true"
+        android:layout_weight="6"
+        android:layout_gravity="center_horizontal"
+        />
+    <EditText android:id="@+id/upload_message"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="Add a message or tag" />
+    <Button
+        android:id="@+id/upload_to_server"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Upload" />
+    <TextView
+        android:text="Stream:"
+        android:id="@+id/streamname"
+        android:gravity="center_horizontal"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_weight="1"/>
+</LinearLayout>
