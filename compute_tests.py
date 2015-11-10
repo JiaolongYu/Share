@@ -1,10 +1,15 @@
 from unittest import TestCase
 import randomized_input
+from mock import patch
 import compute_highest_affinity
 
 
 class StandAloneTests(TestCase):
+
+	@patch('__builtin__.open')
 	def test_compute1(self):
+		# mock_open.return_value.read.return_value = \
+  #           "george|bosco"
 		num_lines = 10000
 		num_users = 1000
 
