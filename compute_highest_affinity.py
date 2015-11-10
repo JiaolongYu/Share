@@ -13,7 +13,7 @@ def highest_affinity(site_list, user_list, time_list):
   # I.e., if the highest affinity pair is "foo" and "bar"
   # return ("bar", "foo").
 
-    d = dict()                                  # d[site1]=[user1,user2......]
+    d = dic()                                  # d[site1]=[user1,user2......]
     s_list=list()                               # record all sites for later use
     for i in range(0,len(site_list)):          # implement d and s_list
         if site_list[i] not in d:
