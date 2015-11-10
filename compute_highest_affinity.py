@@ -41,7 +41,3 @@ def highest_affinity(site_list, user_list, time_list):
     mt.sort()
     max_tup=tuple(mt)
     return max_tup
-<<<<<<< HEAD
-
-=======
->>>>>>> 84114027e5ca7e4132dc0e5f4422a795522c264f
